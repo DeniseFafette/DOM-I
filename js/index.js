@@ -38,5 +38,40 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+let container = document.querySelector('div');
+let header = document.querySelector('div');
+
+let links = document.getElementsByTagName('a');
+    links[0].textContent = siteContent.nav["nav-item-1"];
+    links[1].textContent = siteContent.nav["nav-item-2"];
+    links[2].textContent = siteContent.nav["nav-item-3"];
+    links[3].textContent = siteContent.nav["nav-item-4"];
+    links[4].textContent = siteContent.nav["nav-item-5"];
+    links[5].textContent = siteContent.nav["nav-item-6"];
+
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+    logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let Heading1 = document.querySelector('h1');
+Heading1.textContent = 'DOM IS AWESOME';
+
+
+
+// Array.from(Links)
+// Array.from(Links).forEach((link) => {
+//     // Do stuff here
+//     console.log(link.tagName);
+//   link.style.color = 'hotpink';
+//   link.textContent = "arrays!"
+// });
+
+
+
+
+
+
+
+
+
+
