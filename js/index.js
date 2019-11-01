@@ -54,17 +54,22 @@ let logo = document.getElementById("logo-img");
     logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let Heading1 = document.querySelector('h1');
-Heading1.textContent = 'DOM IS AWESOME';
+    Heading1.textContent = 'DOM IS AWESOME';
+
+let ctaImage = document.getElementById("cta-img");
+    ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+let ctaButton = document.querySelector('button');
+    ctaButton.textContent = 'Get Started';
+
+let contact = document.getElementsByClassName('contact');
+    contact[0].textContent = siteContent.contact["contact-h4"];
 
 
+let footer = document.querySelector('footer');
+    footer.textContent = 'Copyright Great Idea! 2018';  
+    
 
-// Array.from(Links)
-// Array.from(Links).forEach((link) => {
-//     // Do stuff here
-//     console.log(link.tagName);
-//   link.style.color = 'hotpink';
-//   link.textContent = "arrays!"
-// });
 
 
 
