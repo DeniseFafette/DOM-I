@@ -62,9 +62,35 @@ let ctaImage = document.getElementById("cta-img");
 let ctaButton = document.querySelector('button');
     ctaButton.textContent = 'Get Started';
 
-let contact = document.getElementsByClassName('contact');
-    contact[0].textContent = siteContent.contact["contact-h4"];
+let topContentH4 = document.querySelectorAll('.top-content .text-content h4');
+let topContentP = document.querySelectorAll('.top-content .text-content p');
+    topContentH4[0].textContent = siteContent['main-content']['features-h4'];
+    topContentH4[1].textContent = siteContent['main-content']['about-h4'];
+    topContentP[0].textContent = siteContent['main-content']['features-content'];
+    topContentP[1].textContent = siteContent['main-content']['about-content'];
 
+let middleImg = document.querySelector('#middle-img');
+    middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+let bottomContentH4 = document.querySelectorAll('.bottom-content .text-content h4');
+let bottomContentP = document.querySelectorAll('.bottom-content .text-content p');
+    bottomContentH4[0].textContent = siteContent['main-content']['services-h4'];
+    bottomContentH4[1].textContent = siteContent['main-content']['product-h4'];
+    bottomContentH4[2].textContent = siteContent['main-content']['vision-h4'];
+    bottomContentP[0].textContent = siteContent['main-content']['services-content'];
+    bottomContentP[1].textContent = siteContent['main-content']['product-content'];
+    bottomContentP[2].textContent = siteContent['main-content']['vision-content'];
+
+// console.log(topContentH4, 'h4');
+// console.log(topContentP, 'p');
+
+let info = document.querySelector('.contact h4');
+    info.textContent = siteContent.contact["contact-h4"];
+
+let infop = document.querySelectorAll('.contact p');
+    infop[0].textContent = siteContent.contact["address"];
+    infop[1].textContent = siteContent.contact["phone"];
+    infop[2].textContent = siteContent.contact["email"];
 
 let footer = document.querySelector('footer');
     footer.textContent = 'Copyright Great Idea! 2018';  
